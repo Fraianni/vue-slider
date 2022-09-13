@@ -18,53 +18,11 @@
         <div class="container">
             <div class="slider-wrapper" tabindex="0">
 
-                <div v-if="order==1" class="item">
-                    <img src="img/01.jpg" alt="Svezia" />
+                <div class="item">
+                    <img :src="slides[order].image" :alt="slides[order].title" />
                     <div class="text">
-                        <h3>Svezia</h3>
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nostrum dicta laudantium
-                            sed quos recusandae cupiditate impedit adipisci velit praesentium provident assumenda id
-                            saepe optio itaque vitae, doloremque laborum nesciunt. </p>
-                    </div>
-                </div>
-
-                <div v-if="order==2" class="item">
-                    <img src="img/02.jpg" alt="Svezia" />
-                    <div class="text">
-                        <h3>Svezia</h3>
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nostrum dicta laudantium
-                            sed quos recusandae cupiditate impedit adipisci velit praesentium provident assumenda id
-                            saepe optio itaque vitae, doloremque laborum nesciunt. </p>
-                    </div>
-                </div>
-
-                <div v-if="order==3" class="item">
-                    <img src="img/03.jpg" alt="Svezia" />
-                    <div class="text">
-                        <h3>Svezia</h3>
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nostrum dicta laudantium
-                            sed quos recusandae cupiditate impedit adipisci velit praesentium provident assumenda id
-                            saepe optio itaque vitae, doloremque laborum nesciunt. </p>
-                    </div>
-                </div>
-
-                <div v-if="order==4" class="item">
-                    <img src="img/04.jpg" alt="Svezia" />
-                    <div class="text">
-                        <h3>Svezia</h3>
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nostrum dicta laudantium
-                            sed quos recusandae cupiditate impedit adipisci velit praesentium provident assumenda id
-                            saepe optio itaque vitae, doloremque laborum nesciunt. </p>
-                    </div>
-                </div>
-
-                <div v-if="order==5" class="item">
-                    <img src="img/05.jpg" alt="Svezia" />
-                    <div class="text">
-                        <h3>Svezia</h3>
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nostrum dicta laudantium
-                            sed quos recusandae cupiditate impedit adipisci velit praesentium provident assumenda id
-                            saepe optio itaque vitae, doloremque laborum nesciunt. </p>
+                        <h3>{{slides[order].title}}</h3>
+                        <p> {{slides[order].text}} </p>
                     </div>
                 </div>
 
