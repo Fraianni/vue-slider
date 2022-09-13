@@ -27,3 +27,27 @@ const slides = [
 ];
 
 console.log(slides);
+
+const app = new Vue({
+    el: '#app',
+    data: {
+        order: 1
+    },
+    methods: {
+        previousImg: function () {
+            if (this.order === 1)
+                this.order = 5;
+            else
+                this.order--;
+        },
+
+        nextImg: function () {
+            console.log(this.order)
+            if (this.order === 5)
+                this.order = 1;
+            else
+                this.order++;
+        }
+
+    }
+});
